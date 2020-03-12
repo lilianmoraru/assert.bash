@@ -31,3 +31,7 @@ assert()
     kill -ABRT $$
   fi
 }
+
+# Example(pass): assert "-f $0"
+# Example(pass): assert "-f $0" "This script is not a file :)"
+# Example(fail): assert "! -f $0"
